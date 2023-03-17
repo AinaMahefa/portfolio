@@ -26,7 +26,7 @@ if (isset($_POST['name']) && isset($_POST['slug'])) {
 		setFlash("Le slug n'est pas valide","danger");
 		header('Location:Categories.php');
 		die();
-		//echo "Le slug n'est pas valide";
+		
 	}
 }
 

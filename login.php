@@ -37,8 +37,8 @@ include 'partials/header.php';
 
 <div class="jumbotron">
 	<div class="container text-center">
-    	<h1>My Portfolio</h1>      
-    	<p>Some text that represents "Me"...</p>
+    	<h1>Login d'administration</h1>      
+    	<p></p>
 	</div>
 </div>
 
