@@ -44,7 +44,7 @@ $works=$select->fetchAll();
 				<td><?= $work['id'];?></td>
 				<td><?= $work['name'];?></td>
 				<td>
-					<a href="works_edit.php?id=<?=$work['id'];?>" class="btn btn-default">Editer</a>
+					<a href="works_edit.php?id=<?=$work['id'];?>&<?=csrf();?>" class="btn btn-default">Editer</a>
 				</td>
 				<td>
 					<a href="?delete=<?=$work['id'];?>&<?=csrf();?>" class="btn btn-error" onclick="return confirm('Vous aller supprimer <?=$work['name'];?> de votre réalisation')">Supprimer</a>
