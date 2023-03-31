@@ -43,7 +43,7 @@ $categories=$select->fetchAll();
 				<td><?= $category['id'];?></td>
 				<td><?= $category['name'];?></td>
 				<td>
-					<a href="category_edit.php?id=<?=$category['id'];?>" class="btn btn-default">Editer</a>
+					<a href="category_edit.php?id=<?=$category['id'];?>&<?=csrf();?>" class="btn btn-default">Editer</a>
 					<a href="?delete=<?=$category['id'];?>&<?=csrf();?>" class="btn btn-error" onclick="return confirm('Vous aller supprimer <?=$category['name'];?> de votre categories')">Supprimer</a>
 				</td>
 			</tr>	

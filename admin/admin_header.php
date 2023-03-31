@@ -3,8 +3,8 @@
   <title>Mon administration</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../bootstrap.min.css">
-  <!--<link rel="stylesheet" type="text/css" href="<?php //echo 'WEBROOT';?> bootstrap.min.css">-->
+  
+  <link rel="stylesheet" type="text/css" href="<?= WEBROOT;?>bootstrap.min.css">
   <script src="../jquery.min.js"></script>
   <script src="../bootstrap.min.js"></script>
   <style>
@@ -41,10 +41,11 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="../logout.php"><span class="glyphicon glyphicon-log-in"></span> Deconnection</a></li>
+        <li><a href="../logout.php"><span class="glyphicon glyphicon-log-in"></span> Déconnexion</a></li>
       </ul>
     </div>
   </div>
 </nav> 
 
 <?php echo flash();?>
+
